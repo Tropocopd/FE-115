@@ -1,0 +1,17 @@
+* {
+    max-width: 700px;
+    margin: auto;
+  }
+
+.page_header {
+    color: cornflowerblue;
+}
+
+h2 {
+    color: cadetblue;
+}
+
+p, li, a {
+    color: chocolate;
+}
+
