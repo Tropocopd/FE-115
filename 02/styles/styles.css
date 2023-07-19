@@ -1,0 +1,27 @@
+* {
+  max-width: 700px;
+  margin: auto;
+  line-height: 2;
+}
+
+@font-face {
+  font-family: 'MySansSerifFont';
+  src: url('path/to/sans-serif-font.woff') format('woff');
+}
+
+body {
+  font-family: 'MySansSerifFont', sans-serif;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 135px;
+}
+
+.my_resume {
+  line-height: 70px;
+}
+
+.my_iframe {
+  border: 1px solid rgb(0, 0, 0);
+}
