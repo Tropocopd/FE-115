@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Search</h2>
+      <form action="https://www.google.com/search" target="_blank">
+        <input type="text" name="q">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    <div class="container">
+      <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="GET" enctype="multipart/form-data">
+        
+        <!-- TEXT IMPUT -->
+
+        <input type="hidden" name="hidden-filed" value="rej3">
+
+        <label for="client_name">Client name</label>
+        <input type="text" placeholder="Add your name" name="client_name" id="client_name" value="Pavlo">
+
+        <label for="client_phone">Client phone</label>
+        <input type="tel" name="client_phone" id="client_phone" value="+380--">
+
+        <label for="client_email">Client email</label>
+        <input type="email" name="client_email" id="client_email">
+
+        <label for="client_date">Date</label>
+        <input type="date" name="client_date" id="client_date">
+
+        <label for="client_quntity">How much you need</label>
+        <input type="number" name="client_quntity" id="client_quntity">
+
+        <label for="client_password">Password</label>
+        <input type="password" name="client_password" id="client_password" required>
+
+        <label for="client_range">Enter your age range</label>
+        <input type="range" name="client_range" id="client_range" disabled>
+
+        <!-- CHECKBOX/RADIO -->
+        <h2>Choose your drink</h2>
+        <label for="client_drinl_beer">Beer</label>
+        <input type="checkbox" name="client_drinl" id="client_drinl_beer" value="beer">
+
+        <label for="client_drinl_cola">Cola</label>
+        <input type="checkbox" name="client_drinl" id="client_drinl_cola" value="cola">
+
+        <label for="client_drinl_water">Wtaer</label>
+        <input type="checkbox" name="client_drinl" id="client_drinl_water" value="water">
+
+        <h2>Payment type</h2>
+        <label for="client_pay_cash">Cash</label>
+        <input type="radio" name="client_pay" id="client_pay_cash" value="cash" checked>
+
+        <label for="client_pay_card">Card</label>
+        <input type="radio" name="client_pay" id="client_pay_card" value="card">
+
+        <!-- SELECT -->
+
+        <label for="pizza-type">Pizza</label>
+        <select name="pizza-type" id="pizza-type">
+          <option value="1">Cheese</option>
+          <option value="2">Pineaple</option>
+          <option value="3">Meat</option>
+          <option value="4">Onion</option>
+          <option value="5">Salami</option>
+        </select>
+
+        <!-- TEXTAREA -->
+
+        <textarea name="user-comment" id="user-comment" placeholder="some text"></textarea>
+
+        <!-- SUBMIT -->
+        <button type="submit">Place your order</button>
+
+        <!-- FILE -->
+
+        <label for="user-file">Add your file</label>
+        <input type="file" id="user-file">
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="container1">
+      <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" target="_blank" id="client-form" enctype="multipart/form-data">
+        <fieldset>
+          <legend><h1>Реєстраційна форма клієнта</h1></legend>
+          <!-- CLIENT NAME -->
+          <label for="client-name">Повне ім’я</label>
+          <input type="text" name="client-name" id="client-name" required>
+          <br>
+          <br>
+          <!-- CLIENT EMAIL -->
+          <label for="client-email">Email</label>
+          <input type="email" name="client-email" id="client-email" required>
+          <br>
+          <br>
+          <!-- CLIENT PASSWORD -->
+          <label for="client-password">Пароль</label>
+          <input type="password" name="client-password" id="client-password" required>
+          <br>
+          <br>
+          <!-- CONFIRM PASSWORD -->
+          <label for="confirm-password">Пароль ще раз</label>
+          <input type="password" name="confirm-password" id="confirm-password" required>
+          <br>
+          <br>
+          <!-- SEX CLIENT -->
+          <h2>Стать</h2>
+          <br>
+          <label for="client-sex-woman">Жінка</label>
+          <input type="radio" name="client-sex" id="client-sex-woman" value="woman" required checked>
+          <br>
+          <br>
+          <label for="client-sex-man">Чоловік</label>
+          <input type="radio" name="client-sex" id="client-sex-man" value="man" required>
+          <br>
+          <br>
+          <!-- AGE -->
+          <label for="client-age">Вік</label>
+          <input type="number" name="client-age" id="client-age" max="100" min="1" required>
+          <br>
+          <br>
+          <!-- COURSE -->
+          <label for="course-type">Курс</label>
+          <select name="course-type" id="course-type" required>
+            <option value="">Front-End</option>
+            <option value="2">Back-End</option>
+            <option value="3">Project Management</option>
+            <option value="4">QA Manual</option>
+            <option value="5" hidden selected>Вибери курс</option>
+          </select>
+          <br>
+          <br>
+          <!-- ADDRESS -->
+          <h2>Повна адреса</h2>
+          <textarea name="client_address" id="client_address" cols="30" rows="10" 
+          placeholder="Країна, область, населений пункт, вулиця" required></textarea>
+          <br>
+          <br>
+        </fieldset>
+        <fieldset>
+          <legend><h2>Додаткова інформація(необов'язково)</h2></legend>
+          <!-- FAV COLOR -->
+          <label for="favorite-color">Улюблений колір прадіда:</label>
+          <input type="color" id="favorite-color" name="favorite-color">
+          <br>
+          <br>
+          <!-- EVENT DATE -->
+          <label for="event-date">Точна дата та час народження твого кота(можна чужого):</label>
+          <input type="datetime-local" id="event-date" name="event-date">
+          <br>
+          <br>
+          <!-- FILE -->
+          <label for="file-upload">Найнеобхідніший файл в світі:</label>
+          <input type="file" id="file-upload" name="file-upload">
+          <br>
+          <br>
+          <!-- HIDDEN -->
+          <input type="hidden" id="hidden-field" name="hidden-field" value="hidden123">
+          <!-- KREML ON FIRE -->
+          <label for="fav-pic">Крсиво?</label>
+          <input type="image" id="fav-pic" name="fav-pic" alt="kreml on fire"
+          src="https://rrac.com.ua/wp-content/uploads/2022/05/168536-768x432-1.jpg">
+          <br>
+          <input type="radio" id="option-1" name="kreml-on-fire" value="option-1">
+          <label for="option-1">Так!</label>
+          <input type="radio" id="option-2" name="kreml-on-fire" value="option-2">
+          <label for="option-2">Беззаперечно</label>
+          <input type="radio" id="option-3" name="kreml-on-fire" value="option-3">
+          <label for="option-3">Ні(жарт - ТАК!)</label>
+          <br>
+          <br>
+          <!-- PRICE -->
+          <label for="price-range">Скільки за це готовий заплатити:</label>
+          <input type="range" id="price-range" name="price-range" min="0" max="100" step="1">
+          <br>
+          <br>
+          <!-- PHONE -->
+          <label for="phone">Телефон для СБУ(якшо вище не голосував):</label>
+          <input type="tel" id="phone" name="phone">
+          <br>
+          <br>
+          <!-- I AGREE -->
+          <label for="client_agree">Я погоджуюсь з обробкою моїх персональних даних</label>
+          <input type="checkbox" name="client_agree" id="client_agree" value="agree" required>
+          <br>
+          <br>
+          <!-- RESET/SUBMIT -->
+          <button type="reset" id="reset">Очистити форму</button>
+          <button type="submit" id="submit">Зареєструватися</button>
+          <br>
+          <br>
+        </fieldset>
+      </form>
+  </div>
+</body>
+</html>
