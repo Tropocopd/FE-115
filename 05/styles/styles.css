@@ -1,0 +1,142 @@
+* {
+  transition: all .1s ease-in;
+}
+
+.page_wrapper {
+  font-family: "Trebuchet MS", Trebuchet, Arial, sans-serif;
+  background-color: #3B3F45;
+  margin: 5px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 795px;
+}
+
+/* HEADER */
+
+.header {
+  background-color: #4A4F56;
+  padding: 19px auto 12px;
+  margin-bottom: 20px;
+}
+
+.site_heading {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #FF8984;
+  padding: 19px 0 4px
+}
+
+.site_sub_heading {
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #FF8984;
+  padding: 4px 0 12px;
+}
+
+/* MAIN */
+
+main {
+  margin: 20px 0 45px;
+}
+
+.check_list {
+  width: 795px;
+}
+
+.check_item {
+  display: flex;
+  align-items: center;
+  background-color: #88839E;
+  padding: 9px;
+  border: 3px solid transparent;
+  position: relative;
+}
+
+.check_item:nth-child(2n) {
+  background-color: #7A7593;
+}
+
+.check_item:hover {
+  background-color: #625E77;
+  border-color: #fff;
+}
+
+.check_item:active {
+  background-color: #77615e;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.true_checkbox {
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  margin-right: 16px;
+  background-color: #fff;
+}
+
+input[type="checkbox"]:checked + .true_checkbox {
+  background-image: url(../img/Done.svg);
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+}
+
+.checkbox_text_big {
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  position: relative;
+}
+
+.checkbox_text_small {
+  font-weight: 400;
+  margin-left: 4px;
+  font-size: 11px;
+  color: #fff; 
+  position: relative;
+}
+
+input[type="checkbox"]:checked + .true_checkbox ~ .checkbox_text_big,
+input[type="checkbox"]:checked + .true_checkbox ~ .checkbox_text_small {
+  text-decoration: line-through;
+  color: #9B96AC;
+}
+
+/* FOOTER */
+
+.footer {
+  margin: 45px;
+}
+
+.last_button {
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #FF8984;
+  width: 795px;
+  padding: 12px 0;
+  background-color: #4A4F56;
+  margin-bottom: 45px;
+}
+
+.last_button:hover {
+  opacity: 0.5;
+}
+
+.last_button:active {
+  text-align: center;
+  color: #f6de08;
+  background-color: #fff;
+  opacity: 1;
+}
