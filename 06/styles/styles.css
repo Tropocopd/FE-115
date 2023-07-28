@@ -1,0 +1,134 @@
+html, body {
+  font-family: Lucida Sans Unicode;
+}
+
+.grid {
+  width: 1010px;
+  margin: 0 auto;
+  font-size: 0;
+  background-color: silver;
+}
+
+section {
+  height: 650px;
+  background-color: #39c;
+  color: #fff;
+  border: 25px solid #2B81AC;
+}
+
+.w-25 {
+  width: 25%;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.w-50 {
+  width: 50%;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.w-100 {
+  width: 100%;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.w-25:hover {
+  opacity: 1; 
+}
+
+.w-50:hover {
+  opacity: 1; 
+}
+
+.w-100:hover {
+  opacity: 1; 
+}
+
+.grid div {
+  background-color: #fff;
+  padding: 20px 0;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: 2px solid #fff;
+}
+
+.grid div:nth-child(1) {
+  background-color: #3399CC;
+}
+
+.grid div:nth-child(2) {
+  background-color: #33CCCC;
+}
+
+.grid div:nth-child(3) {
+  background-color: #996699;
+}
+
+.grid div:nth-child(4) {
+  background-color: #C24747;
+}
+
+.grid div:nth-child(5) {
+  background-color: #E2674A;
+}
+
+.grid div:nth-child(6) {
+  background-color: #FFCC66;
+}
+
+.grid div:nth-child(7) {
+  background-color: #99CC99;
+}
+
+.grid div:nth-child(8) {
+  background-color: #669999;
+}
+
+.grid div:nth-child(9) {
+  background-color: #CC6699;
+}
+
+.grid div:nth-child(10) {
+  background-color: #339966;
+}
+
+.grid div:nth-child(11) {
+  background-color: #666699;
+}
+
+i, p {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 200;
+  padding: 4px 1px;
+  color: rgba(255, 255, 255, 0.70);
+}
+
+i {
+  font-size: 25px;
+}
+
+.outside_box_top {
+  padding: 39px  100px 20px;
+}
+
+.outside_box_bottom {
+  padding: 20px  100px;
+}
+
+.text_outside_small {
+  font-size: 10px;
+  color: #fff
+}
+
+.text_outside {
+  color: #fff
+}
+
+
+
