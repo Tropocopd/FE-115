@@ -83,7 +83,7 @@
 }
 
 .main_text {
-  width: 47%;
+  width: 500px;
   padding: 95px 0;
   display: inline-block;
   vertical-align: top;
@@ -106,6 +106,7 @@
 .main_picture {
   background-image: url(../img/main_picture.svg);
   display: inline-block;
+  position: relative;
   width: 53%;
   top: 0;
   left: 0;
@@ -116,7 +117,6 @@
 
 .main_button {
   padding: 13px 40px;
-  width: 190px;
   display: inline-block;
   text-align: center;
   text-transform: capitalize;
@@ -217,7 +217,6 @@
 
 .about_button {
   padding: 13px 40px;
-  width: 190px;
   display: inline-block;
   text-transform: capitalize;
   border-radius: 4px;
@@ -283,6 +282,7 @@
 .design_picture {
   background-image: url(../img/design_pro.svg);
   display: inline-block;
+  position: relative;
   width: 45%;
   top: 0;
   left: 0;
@@ -323,6 +323,7 @@
 .pm_picture {
   background-image: url(../img/pm.svg);
   display: inline-block;
+  position: relative;
   width: 45%;
   top: 0;
   left: 0;
@@ -408,6 +409,7 @@
 
 .marketing_picture {
   background-image: url(../img/Marketers.svg);
+  position: relative;
   display: inline-block;
   width: 45%;
   top: 0;
