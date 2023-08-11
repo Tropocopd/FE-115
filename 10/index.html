@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+  <div class="page_wrapper">
+
+    <section class="create_section">
+
+      <header class="header">
+        <div class="container">
+          <div class="heading_wrapper">
+            <h1 class="heading">Create an Account</h1>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <form class="form" action="#">
+
+            <div class="form_group_s">
+              <label for="first_name">First Name</label>
+              <input type="text" id="first_name" name="first_name" required>
+            </div>
+
+            <div class="form_group_s">
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" name="last_name" required>
+            </div>
+
+            <div class="form_group_l">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required>
+              <p class="sub_text">We'll never share your email with anyone else.</p>
+            </div>
+
+            <div class="form_group_l">
+              <label for="gender_male" class="radio_btn">Male
+                <input type="radio" id="gender_male" name="gender" checked>
+                <span class="radio_checkmark"></span>
+              </label>
+
+              <label for="gender_female" class="radio_btn">Female
+                <input type="radio" id="gender_female" name="gender">
+                <span class="radio_checkmark"></span>
+              </label>
+            </div>
+
+            <div class="form_group_s">
+              <label for="country">Country</label>
+              <div class="custom-select">
+                <select name="country" id="country" class="hidden-select" required>
+                  <option value="1" selected hidden>Select</option>
+                  <option value="2">Ukraine</option>
+                  <option value="3">United States</option>
+                  <option value="4">Sweden</option>
+                  <option value="5">Japan</option>
+                  <option value="6">Australia</option>
+                  <option value="7">Germany</option>
+                  <option value="8">United Kingdom</option>
+                </select>
+                <button class="change_country" for="country"></button>
+              </div>
+            </div>
+
+            <div class="form_group_s">
+              <label for="city">City</label>
+              <input type="text" id="city" name="City" required>
+            </div>
+
+            <div class="form_group_l">
+              <button class="sign_up" type="submit">Sign Up</button>
+            </div>
+          </form>
+
+          <div class="sub_form_wrapper">
+            <p class="sub_form_text">By clicking the 'Sign Up' button, you confirm that you accept our<br></p>
+            <p class="sub_form_text"><a href="#" class="sub_form_link">Terms of Use</a> and <a href="#"
+                class="sub_form_link">Privacy Policy</a></p>
+          </div>
+
+          <div class="log_in_wrapper">
+            <span class="log_in_text">Have an account?</span>
+            <a class="log_in_link" href="#">Log In</a>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+
+        </div>
+      </footer>
+    </section>
+
+    <section class="profile_section">
+
+      <header class="header">
+        <div class="container">
+          <div class="heading_wrapper">
+            <h1 class="heading">Profile</h1>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+
+          <div class="user_photo_select">
+            <div class="user_pic">
+              <img src="./img/user_pic.png" alt="">
+            </div>
+
+            <div class="content_btn">
+              <div class="form_group">
+                <button class="change_photo"></button>
+                <label for="file_input" class="custom-file-label"></label>
+                <input type="file" id="file_input" class="hidden-input">
+                <p class="sub_file_text">Up to 1 MB (300x300 px)</p>
+              </div>
+
+              <div class="delete_btn">
+                <button class="delete_photo" type="reset"></button>
+              </div>
+
+            </div>
+          </div>
+
+          <form class="form" action="#">
+
+            <div class="form_group_s">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name">
+            </div>
+  
+            <div class="form_group_s">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form_group_s">
+              <label for="country">Country</label>
+              <div class="custom-select">
+                <select name="country" id="country" class="hidden-select">
+                  <option value="1" selected hidden>Select</option>
+                  <option value="2">Ukraine</option>
+                  <option value="3">United States</option>
+                  <option value="4">Sweden</option>
+                  <option value="5">Japan</option>
+                  <option value="6">Australia</option>
+                  <option value="7">Germany</option>
+                  <option value="8">United Kingdom</option>
+                </select>
+                <button class="change_country" for="country"></button>
+              </div>
+            </div>
+
+            <div class="form_group_s">
+              <label for="city">City</label>
+              <input type="text" id="city" name="City">
+            </div>
+
+            <div class="form_group_s">
+              <label for="zip">Zip Code</label>
+              <input type="number" id="zip" name="zip">
+            </div>
+  
+            <div class="form_group_s">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+
+              <button class="upd_btn" type="submit">Update</button>
+          </form>
+
+        </div>
+      </main>
+    </section>
+  </div>
+</body>
+
+</html>
