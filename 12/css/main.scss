@@ -1,0 +1,199 @@
+:root {
+    --logo-box-padding: 23px 0 23px;
+    --logo-box-color: #16133D;
+}
+
+.page_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    border-bottom: 1px solid #EFEEF3;
+    padding: 23px 0 23px;
+}
+
+.logo_box {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+
+    .logo_link {
+        cursor: pointer;
+    }
+
+    .logo_icon {
+        width: 30px;
+        height: 30px;
+        fill: #3DB370;
+        stroke-width: 1px;
+        stroke: #3DB370;    
+    }
+
+    .logo_text {
+        font-family: Quicksand;
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 35px;  
+        color: #16133D;
+    }
+}
+
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .main_heading_wrap {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    
+        .main_sub_heading {
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21px;
+            color: #7690A8;
+        }
+    
+        .main_heading {
+            font-family: Nunito Sans;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 52px;
+            letter-spacing: 0.2px;
+            color: #16133D;
+        }
+    }
+
+
+    .service_list {
+        display: flex;
+        gap: 30px;
+
+        .list_item {
+            max-width: 370px;
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid #E5EAF4;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        
+            .icon_box {
+                width: 64px;
+                height: 64px;
+                border-radius: 8px;
+                border: 1px solid #E5EAF4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .logo_icon {
+                    width: 39px;
+                    height: 36px;
+                }
+
+                .logo_icon_hover {
+                    width: 39px;
+                    height: 36px;
+                    display: none;
+                  }
+            }
+
+            .text_box {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                .item_heading {
+                    color: #16133D;
+                    font-family: Roboto;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 21.28px; 
+                    letter-spacing: 0.2px;
+                }
+
+                .item_text {
+                    font-family: Roboto;
+                    color: #16133D;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+            }
+            
+            .item_link {
+                color: #3DB370;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+
+        .list_item:hover {
+            border: 1px solid #3DB370;
+        }
+
+        .list_item:hover .logo_icon {
+            display: none;
+          }
+
+        .list_item:hover .logo_icon_hover {
+            display: inline-block;
+          }
+    }
+}
+
+.footer {
+    background-color: #16133D;
+
+    @extend .logo_box; 
+    
+    .logo_text {
+        color: #fff; 
+    }
+
+    .footer_content {
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .social_list {
+            display: flex;
+            gap: 10px;
+
+            .social_box {
+                width: 38px;
+                height: 38px;
+                background-color: #EFEEF3;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .social_icon {
+                    max-width: 20px;
+                    max-height: 20px;
+                }
+            }
+
+            .social_box:hover {
+                .social_icon {
+                    --g1: #3DB370;
+                }
+            }
+        }
+    }
+}
