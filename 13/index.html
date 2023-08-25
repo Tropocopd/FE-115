@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manifest</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Red+Hat+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/hamburgers.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body class="fixed">
+    <div class="page_wrapper">
+        <!-- HEADER -->
+        <header class="header">
+            <div class="container">
+                <div class="header_content">
+
+                    <div class="header_logo">
+                        <a class="logo_link" href="#">
+                            <svg class="logo_icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#logo_icon" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="header_menu ">
+
+                        <nav class="header_nav active">
+                            <div class="header_logo mobile">
+                                <a class="logo_link" href="#">
+                                    <svg class="logo_icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#logo_icon" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <ul class="nav_list">
+                                <li class="nav_item">
+                                    <a href="#" class="nav_link favorite">Home</a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#" class="nav_link">about</a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#" class="nav_link">works</a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#" class="nav_link">blog</a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#" class="nav_link">contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="header_search">
+                        <a class="search_link" href="#">
+                            <svg class="search_icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#search_icon" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <button class="hamburger mobile hamburger--spin" onclick="toggleMenu(event)" type="button">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- HERO -->
+
+        <div class="hero_section">
+            <div class="hero_pic">
+                <picture>
+                    <source srcset="./assets/img/1.3.jpg" media="(max-width: 320px)"/>
+                    <source srcset="./assets/img/1.2.jpg" media="(max-width: 576px)"/>
+                    <source srcset="./assets/img/1.1.jpg" media="(max-width: 768px)"/>
+                    <img src="./assets/img/1.1.jpg" />
+                </picture>
+            </div>
+                <div class="main_hero">
+                    <h1 class="hero_heading">
+                        Manifest is a newborn theme. Clean, simple and fast.
+                    </h1>
+                </div>
+        </div>
+
+        <!-- MAIN -->
+        <main class="main">
+
+            <div class="blog_section">
+                <div class="container">
+                    <div class="blog_content">
+                        <h2 class="blog_title">Blog</h2>
+
+                        <div class="article reverse">
+                            <div class="article_pic">
+                                <picture>
+                                    <source srcset="./assets/img/2.3.jpg" media="(max-width: 320px)"/>
+                                    <source srcset="./assets/img/2.2.jpg" media="(max-width: 576px)"/>
+                                    <source srcset="./assets/img/2.2.jpg" media="(max-width: 768px)"/>
+                                    <source srcset="./assets/img/2.1.jpg" media="(max-width: 991px)"/>
+                                    <img src="./assets/img/2.1.jpg" />
+                                </picture>
+                            </div>
+
+                            <div class="article_info">
+                                <p class="article_tag">Technology, Interface Design</p>
+                                <h3 class="article_title">Using UX Design to Build a Sustainable Future</h3>
+                                <p class="article_date">6 May, 2020</p>
+                                <p class="article_text">
+                                    Transformation has to be driven by everybody, not just by climate groups, and we
+                                    have a responsibility to use our influence to drive this.
+                                    <a class="arrow_link" href="#">
+                                        <svg class="arrow_icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#arrow_icon" />
+                                        </svg>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="article">
+
+                            <div class="article_info">
+                                <p class="article_tag">Technology, Interface Design</p>
+                                <h3 class="article_title">Using UX Design to Build a Sustainable Future</h3>
+                                <p class="article_date">6 May, 2020</p>
+                                <p class="article_text">
+                                    Transformation has to be driven by everybody, not just by climate groups, and we
+                                    have a responsibility to use our influence to drive this.
+                                    <a class="arrow_link" href="#">
+                                        <svg class="arrow_icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#arrow_icon" />
+                                        </svg>
+                                    </a>
+                                </p>
+                            </div>
+
+                            <div class="article_pic">
+                                <picture>
+                                    <source srcset="./assets/img/3.3.jpg" media="(max-width: 320px)"/>
+                                    <source srcset="./assets/img/3.2.jpg" media="(max-width: 576px)"/>
+                                    <source srcset="./assets/img/3.2.jpg" media="(max-width: 768px)"/>
+                                    <source srcset="./assets/img/3.1.jpg" media="(max-width: 991px)"/>
+                                    <img src="./assets/img/3.1.jpg" />
+                                </picture>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="latest_section">
+                <div class="container">
+                    <div class="latest_content">
+
+                        <div class="wrap_heading">
+                            <h3 class="wrap_title">Latest Posts</h3>
+                            <div class="arrow_wrap">
+                                <a class="wrap_link" href="#">
+                                    <span class="arrow_content">View All</span>
+                                    <svg class="arrow_icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#arrow_icon" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="posts_wrap">
+                            <div class="post_card">
+                                <div class="post_pic">
+                                    <picture>
+                                        <source srcset="./assets/img/4.3.jpg" media="(max-width: 320px)"/>
+                                        <source srcset="./assets/img/4.2.jpg" media="(max-width: 576px)"/>
+                                        <source srcset="./assets/img/4.2.jpg" media="(max-width: 768px)"/>
+                                        <source srcset="./assets/img/4.1.jpg" media="(max-width: 991px)"/>
+                                        <img src="./assets/img/4.1.jpg" />
+                                    </picture>
+                                </div>
+
+                                <div class="post_info">
+                                    <div class="post_heading">
+                                        <p class="post_tag">Interface Design</p>
+                                        <p class="post_date">8 June, 2020</p>
+                                    </div>
+                                    <div class="post_description">
+                                        <h3 class="post_title">UX traffic light colours</h3>
+                                        <p class="post_text">
+                                            UI has to make a huge visual difference between warning, an alert and a
+                                            success.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post_card reverse">
+                                <div class="post_pic">
+                                    <picture>
+                                        <source srcset="./assets/img/5.3.jpg" media="(max-width: 320px)"/>
+                                        <source srcset="./assets/img/5.2.jpg" media="(max-width: 576px)"/>
+                                        <source srcset="./assets/img/5.2.jpg" media="(max-width: 768px)"/>
+                                        <source srcset="./assets/img/5.1.jpg" media="(max-width: 991px)"/>
+                                        <img src="./assets/img/5.1.jpg" />
+                                    </picture>
+                                </div>
+
+                                <div class="post_info">
+                                    <div class="post_heading">
+                                        <p class="post_tag">Technology</p>
+                                        <p class="post_date">6 May, 2020</p>
+                                    </div>
+                                    <div class="post_description">
+                                        <h3 class="post_title">Using UX Design to Build a Sustainable Future</h3>
+                                        <p class="post_text">
+                                            UI has to make a huge visual difference between warning, an alert and a
+                                            success.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post_card">
+                                <div class="post_pic">
+                                    <picture>
+                                        <source srcset="./assets/img/6.3.jpg" media="(max-width: 320px)"/>
+                                        <source srcset="./assets/img/6.2.jpg" media="(max-width: 576px)"/>
+                                        <source srcset="./assets/img/6.2.jpg" media="(max-width: 768px)"/>
+                                        <source srcset="./assets/img/6.1.jpg" media="(max-width: 991px)"/>
+                                        <img src="./assets/img/6.1.jpg" />
+                                    </picture>
+                                </div>
+
+                                <div class="post_info">
+                                    <div class="post_heading">
+                                        <p class="post_tag">Visual Design</p>
+                                        <p class="post_date">8 June, 2020</p>
+                                    </div>
+                                    <div class="post_description">
+                                        <h3 class="post_title">Creativity vs. UX</h3>
+                                        <p class="post_text">
+                                            Is it possible to create a delightful user experience without following best
+                                            UX practices?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="most_section">
+                <div class="container">
+                    <div class="most_content">
+
+                        <div class="wrap_heading">
+                            <h3 class="wrap_title">The Most Popular</h3>
+                            <div class="arrow_wrap">
+                                <a class="wrap_link" href="#">
+                                    <span class="arrow_content">View All</span>
+                                    <svg class="arrow_icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#arrow_icon" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="articles_wrap">
+
+                            <div class="articles_card">
+                                <div class="articles_pic">
+                                    <picture>
+                                        <source srcset="./assets/img/7.3.jpg" media="(max-width: 320px)"/>
+                                        <source srcset="./assets/img/7.2.jpg" media="(max-width: 576px)"/>
+                                        <source srcset="./assets/img/7.2.jpg" media="(max-width: 768px)"/>
+                                        <source srcset="./assets/img/7.1.jpg" media="(max-width: 991px)"/>
+                                        <img src="./assets/img/7.1.jpg" />
+                                    </picture>
+                                </div>
+
+                                <div class="articles_info">
+                                    <div class="articles_heading">
+                                        <p class="articles_tag">Interface Design</p>
+                                        <p class="articles_date">8 June, 2020</p>
+                                    </div>
+                                    <div class="articles_description">
+                                        <h3 class="articles_title">Mentorship Match — How a simple LinkedIn feature can
+                                            boost diversity</h3>
+                                        <p class="articles_text">
+                                            LinkedIn is on a clear mission to make professionals more successful by
+                                            connecting the global workforce and as we learned — diversity and success go
+                                            hand in hand
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="articles_card">
+                                <div class="articles_pic">
+                                    <picture>
+                                        <source srcset="./assets/img/8.3.jpg" media="(max-width: 320px)"/>
+                                        <source srcset="./assets/img/8.2.jpg" media="(max-width: 576px)"/>
+                                        <source srcset="./assets/img/8.2.jpg" media="(max-width: 768px)"/>
+                                        <source srcset="./assets/img/8.1.jpg" media="(max-width: 991px)"/>
+                                        <img src="./assets/img/8.1.jpg" />
+                                    </picture>
+                                </div>
+
+                                <div class="articles_info">
+                                    <div class="articles_heading">
+                                        <p class="articles_tag">Visual Design</p>
+                                        <p class="articles_date">8 June, 2020</p>
+                                    </div>
+                                    <div class="articles_description">
+                                        <h3 class="articles_title">Creativity vs. UX</h3>
+                                        <p class="articles_text">
+                                            Is it possible to create a delightful user experience without following best
+                                            UX practices?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="button" type="button">Load more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="last_info_section">
+                <div class="container">
+                    <div class="last_info_content">
+                        <div class="last_info_wrap">
+                            <p class="first_info_text">
+                                Full-time UI/UX designer <br>
+                                Head of Design at VeronaLabs.com
+                            </p>
+                            <span>
+                                <a class="arrow_link" href="#">
+                                    <svg class="arrow_icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#arrow_icon" />
+                                    </svg>
+                                </a>
+                            </span>
+
+                        </div>
+                        <div class="last_info_wrap">
+                            <p class="second_info_text">
+                                We work with clients around the world from our headquarters in Charleston, South
+                                Carolina. <br> <br>
+                                We focus on naming, branding, brand narratives, website design and development, and
+                                brand experiences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_content">
+
+                    <div class="cta_wrap">
+                        <h3 class="footer_title">Need a project?</h3>
+                        <div class="contact_info">
+                            <a class="contact_text" href="tel:(239) 555-0108">(239) 555-0108</a>
+                            <a class="contact_text" href="mailto:tanya.hill@example.com">tanya.hill@example.com</a>
+                        </div>
+                    </div>
+
+                    <div class="socials_wrap">
+                        <ul class="social_list">
+                            <li class="social_item">
+                                <a href="#">
+                                    <div class="social_box">
+                                        <svg class="social_icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#instagram_icon" />
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="social_item">
+                                <a href="#">
+                                    <div class="social_box">
+                                        <svg class="social_icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#facebook_icon" />
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="social_item">
+                                <a href="#">
+                                    <div class="social_box">
+                                        <svg class="social_icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#twitter_icon" />
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="social_item">
+                                <a href="#">
+                                    <div class="social_box">
+                                        <svg class="social_icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#linkedin_icon" />
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="footer_text">
+                    © Copyright Manifest Theme. Allrights reserved
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<script>
+    function toggleMenu(e) {
+        e.preventDefault();
+        e.target.classList.toggle('active')
+        document.querySelector('.header_nav').classList.toggle('active');
+        document.querySelector('.hamburger').classList.toggle('is-active');
+        document.querySelector('.header_menu').classList.toggle('menu_open');
+    }
+</script>
+</body>
+
+</html>
