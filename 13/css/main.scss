@@ -84,35 +84,20 @@
 // HERO
 
 .hero_section {
-    display: grid;
-    place-items: center;
-    position: relative;
-
-    .hero_pic {
-        padding-top: 99px;
-        max-height: 100%;
-        position: relative;
-    }
-}
-
-.main_hero {
-    position: relative;
-    width: 85%;
-    max-width: 1170px;
-    height: 90px;
-    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../assets/img/1.1.jpg);
+    margin: 99px 0 90px;
 
     .hero_heading {
-        width: 770px;
         font-family: 'Red Hat Display';
         font-size: 48px;
         font-weight: 600;
         line-height: 64px; 
         letter-spacing: 2.4px;
-
-        position: relative;
-        left: 0;
-        top: -490px;
+        padding: 100px 0 380px;
+        max-width: 770px;
     }
 }
 
@@ -548,12 +533,6 @@
     opacity: 0;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    .main_hero .hero_heading {
-        top: -390px;
-    }
-}
-
 @media screen and (min-width: 769px) and (max-width: 991px) {
 
     .container {
@@ -651,26 +630,20 @@
 
     // HERO
     .hero_section {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../assets/img/1.1.jpg);
+        margin: 56px 0 90px;
 
-        .hero_pic {
-            padding-top: 57px;
-            width: auto;
-        }
-        
-        .main_hero {
-            height: 70px;
-
-            .hero_heading {
-                position: relative;
-                bottom: 0;
-                left: 0;
-                padding-top: 230px;
-                width: 643px;
-                font-size: 36px;
-                line-height: 50px; 
-                letter-spacing: 1.8px;
-            }
-
+        .hero_heading {
+            font-family: 'Red Hat Display';
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 64px; 
+            letter-spacing: 2.4px;
+            padding: 30px 0 190px;
+            max-width: 770px;
         }
     }
 
@@ -757,6 +730,7 @@
                 height: auto;
                 width: auto;
                 gap: 20px;
+                align-items: center;
 
                 .post_pic img {
                     max-height: 100%;
@@ -814,35 +788,6 @@
     .footer_text {
         padding-bottom: 50px;
     }
-}
-
-
-@media screen and (min-width: 825px) and (max-width: 991px) {
-    .hero_section {
-
-        .main_hero {
-
-            .hero_heading {
-                padding-top: 160px;
-            }
-
-        }
-
-    }  
-}
-
-@media screen and (min-width: 769px) and (max-width: 825px) {
-    .hero_section {
-
-        .main_hero {
-
-            .hero_heading {
-                padding-top: 220px;
-            }
-
-        }
-
-    }  
 }
 
 
@@ -910,14 +855,14 @@
 
         .header_search {
             position: absolute;
-            left: 88%;
+            left: 86%;
             top: 20px;
         }
             
         .hamburger {
             position: absolute;
             z-index: 3;
-            left: 93%;
+            left: 91%;
             top: 16px;
         }
   }
@@ -943,26 +888,20 @@
 
     // HERO
     .hero_section {
-
-        .hero_pic {
-            padding-top: 57px;
-            width: auto;
-        }
-        
-        .main_hero {
-            height: 70px;
-
-            .hero_heading {
-                position: relative;
-                bottom: 0;
-                left: -35px;
-                padding-top: 230px;
-                max-width: 530px;
-                font-size: 36px;
-                line-height: 50px; 
-                letter-spacing: 1.8px;
-            }
-
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../assets/img/1.1.jpg);
+        margin: 56px 0 70px;
+    
+        .hero_heading {
+            font-family: 'Red Hat Display';
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 50px; 
+            letter-spacing: 1.8px;
+            padding: 30px 0 190px;
+            max-width: 600px;
         }
     }
 
@@ -1045,6 +984,7 @@
     .latest_content {
         .posts_wrap {
             flex-direction: column;
+            align-items: center;
 
             .post_card {
                 flex-direction: row;
@@ -1052,6 +992,7 @@
                 height: auto;
                 width: auto;
                 gap: 20px;
+                align-items: center;
 
                 .post_pic img {
                     max-height: 240px;
@@ -1206,27 +1147,21 @@
     }
 
     // HERO
-    .hero_section {
-
-        .hero_pic {
-            padding-top: 57px;
-            width: auto;
-        }
-        
-        .main_hero {
-            height: 70px;
-
-            .hero_heading {
-                position: relative;
-                bottom: 0;
-                left: -25px;
-                padding-top: 310px;
-                max-width: 340px;
-                font-size: 30px;
-                line-height: 50px; 
-                letter-spacing: 1.5px;
-            }
-
+        .hero_section {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../assets/img/1.1.jpg);
+        margin: 56px 0 70px;
+    
+        .hero_heading {
+            font-family: 'Red Hat Display';
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 50px; 
+            letter-spacing: 1.8px;
+            padding: 30px 0 190px;
+            max-width: 600px;
         }
     }
 
@@ -1329,6 +1264,7 @@
 
             .post_card.reverse {
                 flex-direction: column-reverse;
+                align-items: center;
             }
 
             .post_card {
@@ -1337,6 +1273,7 @@
                 height: auto;
                 width: auto;
                 gap: 25px;
+                align-items: center;
 
                 .post_pic img {
                     max-height: 240px;
@@ -1554,27 +1491,20 @@
 
     // HERO
     .hero_section {
-
-        .hero_pic {
-            padding-top: 57px;
-            width: auto;
-        }
-        
-        .main_hero {
-            height: 70px;
-
-            .hero_heading {
-                position: relative;
-                bottom: 0;
-                left: -20px;
-                padding-top: 65px;
-                width: 100%;
-                max-width: 300px;
-                font-size: 30px;
-                line-height: 50px; /* 166.667% */
-                letter-spacing: 1.5px;
-            }
-
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../assets/img/1.1.jpg);
+        margin: 56px 0 70px;
+    
+        .hero_heading {
+            font-family: 'Red Hat Display';
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 50px;
+            letter-spacing: 1.5px;
+            padding: 70px 0 230px;
+            max-width: 300px;
         }
     }
 
@@ -1677,6 +1607,7 @@
 
             .post_card.reverse {
                 flex-direction: column-reverse;
+                align-items: center;
             }
 
             .post_card {
@@ -1685,6 +1616,7 @@
                 height: auto;
                 width: auto;
                 gap: 25px;
+                align-items: center;
 
                 .post_pic img {
                     max-height: 240px;
@@ -1802,20 +1734,20 @@
   /* Mobile Styles */
 @media only screen and (max-width: 270px) {
     .hero_section {
-        
-        .main_hero {
-
-            .hero_heading {
-            position: relative;
-            bottom: 0;
-            left: -20px;
-            padding-top: 180px;
-            width: 100%;
-            max-width: 270px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../assets/img/1.1.jpg);
+        margin: 56px 0 70px;
+    
+        .hero_heading {
+            font-family: 'Red Hat Display';
             font-size: 30px;
+            font-weight: 600;
             line-height: 50px; 
             letter-spacing: 1.5px;
-            }
+            padding: 70px 0 230px;
+            max-width: 300px;
         }
     }
 }
