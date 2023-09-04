@@ -409,7 +409,9 @@ form {
 
         img {
             width: 100%;
+            max-height: 100%;
             max-width: 440px;
+            max-height: 285px;
         }
 
         .what_text_wrap {
@@ -509,4 +511,371 @@ form {
 .pinterest_icon {
     width: 31px;
     height: 32px;
+}
+
+.mobile {
+    display: none;
+}
+
+// Tablet Styles
+@media screen and (min-width: 577px) and (max-width: 991px) {
+    .container {
+        width: 90%;
+        max-width: 990px;
+        margin: 0 auto;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .header {
+        margin-top: 54px;
+    }
+
+    .header_content {
+        padding: 130px 0 0;
+    }
+
+    .main_nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        z-index: 3;
+    }
+
+    form {
+        width: 450px;
+        padding-left: 13px;
+    }
+
+    button[type=submit] {
+        justify-content: center;
+        padding: 16px 20px;
+        margin: 3px 4px 3px 0;
+    }
+
+
+    .nav_content {
+        width: 100%;
+
+        .hamburger {
+            z-index: 4;
+        }
+
+        .nav_logo {
+            padding: 13px 0;
+        }
+
+        .nav {
+            position: fixed;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            width: 60%;
+            background-color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            z-index: 3;
+            transition: all ease .3s;
+            transform: none;
+    
+            &.active {
+                transform: translateX(100%);
+            }
+    
+            .nav_list {
+                color: #fff;
+                flex-direction: column;
+                gap: 20px;
+    
+                .list_item {
+                    font-size: 22px;
+                    padding: 15px 0;
+    
+                    .item_link {
+                        padding: 15px 10px;
+    
+                        &:hover {
+                            background-color: #333;
+                            transition: none;
+                            border-radius: none;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+
+    .nav_content.menu_open::after {
+        content: '';
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .8);
+        z-index: 1;
+        opacity: 1;
+    }
+
+    .why_content {
+        flex-direction: column;
+        padding: 65px 0;
+        gap: 65px;
+
+        .why_pic_wrap {
+            max-width: none;
+            align-items: center;
+
+            img:last-child {
+                align-self: auto;
+            }
+        }
+    }
+
+    .why_info_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why_text {
+        text-align: center;
+    }
+
+    .line_icon {
+        display: none;
+    }
+
+    .steps_icon_wrap {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+    }
+
+    .first_book_content,
+    .second_book_content {
+        justify-content: center;
+
+        .book_info_wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 120px 0 120px;
+
+            .book_text {
+                text-align: center;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .what_content {
+        .what_info_wrap {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin: 40px 0 120px;
+        }
+    }
+}
+// Mobile Styles
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+        max-width: 576px;
+        margin: 0 auto;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .header {
+        margin-top: 54px;
+    }
+
+    .header_content {
+        padding: 130px 0 0;
+    }
+
+    .header_sub_title {
+        text-align: center;
+    }
+
+    .main_nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        z-index: 3;
+    }
+
+    .search_form_wrap {
+        padding-bottom: 120px ;
+    }
+
+    form {
+        width: 147px;
+        padding-left: 0;
+        background: inherit;
+
+        input[type=text] {
+            display: none;
+        }
+
+        button[type=submit] {
+            justify-content: center;
+            padding: 16px 20px;
+            margin: auto;
+        }
+    }
+
+    .nav_content {
+        width: 100%;
+
+        .hamburger {
+            z-index: 4;
+        }
+
+        .nav_logo {
+            padding: 13px 0;
+        }
+
+        .nav {
+            position: fixed;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            width: 60%;
+            background-color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            z-index: 3;
+            transition: all ease .3s;
+            transform: none;
+    
+            &.active {
+                transform: translateX(100%);
+            }
+    
+            .nav_list {
+                color: #fff;
+                flex-direction: column;
+                gap: 20px;
+    
+                .list_item {
+                    font-size: 15px;
+                    padding: 15px 0;
+    
+                    .item_link {
+                        padding: 15px 10px;
+    
+                        &:hover {
+                            background-color: #333;
+                            transition: none;
+                            border-radius: none;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+
+    .nav_content.menu_open::after {
+        content: '';
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .8);
+        z-index: 1;
+        opacity: 1;
+    }
+
+    .why_content {
+        flex-direction: column;
+        padding: 65px 0;
+        gap: 65px;
+
+        .why_pic_wrap {
+            max-width: none;
+            align-items: center;
+
+            img:last-child {
+                align-self: auto;
+            }
+        }
+    }
+
+    .why_info_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why_text {
+        text-align: center;
+    }
+
+    .line_icon {
+        display: none;
+    }
+
+    .steps_icon_wrap {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+    }
+
+    .first_book_content,
+    .second_book_content {
+        justify-content: center;
+
+        .book_info_wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 120px 0 120px;
+
+            .book_title {
+                text-align: center;
+            }
+
+            .book_text {
+                text-align: center;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .what_content {
+        .what_info_wrap {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin: 40px 0 120px;
+
+            .what_text_wrap {
+                padding: 20px 20px;
+            }
+        }
+
+        .what_title {
+            text-align: center;
+        }
+    }
 }
