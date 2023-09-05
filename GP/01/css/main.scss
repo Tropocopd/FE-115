@@ -151,6 +151,7 @@ form {
             display: flex;
             gap: 30px;
             align-items: center;
+            flex-wrap: wrap;
             .list_item {
                 font-size: 14px;
                 font-weight: 400;
@@ -600,6 +601,7 @@ form {
     
                     .item_link {
                         padding: 15px 10px;
+                        border-bottom: 1px solid #999;
     
                         &:hover {
                             background-color: #333;
@@ -781,6 +783,7 @@ form {
     
                     .item_link {
                         padding: 15px 10px;
+                        border-bottom: 1px solid #999;
     
                         &:hover {
                             background-color: #333;
@@ -877,5 +880,25 @@ form {
         .what_title {
             text-align: center;
         }
+    }
+
+    .header {
+        background-image: url(../assets/img/HeaderBackgroundM.webp);
+    }
+
+    .why_section {
+        background-image: url(../assets/img/WhyBackgroundM.webp);
+    }
+
+    .first_book_section {
+        background-image: url(../assets/img/BookBackground_01M.webp);
+    }
+
+    .second_book_section {
+        background-image: url(../assets/img/BookBackground_02M.webp);
+    }
+
+    .what_section {
+        background-image: url(../assets/img/WhatBackgroundM.webp);
     }
 }

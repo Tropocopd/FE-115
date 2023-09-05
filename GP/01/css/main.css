@@ -137,6 +137,7 @@ form input::placeholder {
   display: flex;
   gap: 30px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .main_nav .nav_content .nav_list .list_item {
   font-size: 14px;
@@ -553,6 +554,7 @@ form input::placeholder {
   }
   .nav_content .nav .nav_list .list_item .item_link {
     padding: 15px 10px;
+    border-bottom: 1px solid #999;
   }
   .nav_content .nav .nav_list .list_item .item_link:hover {
     background-color: #333;
@@ -719,6 +721,7 @@ form input::placeholder {
   }
   .nav_content .nav .nav_list .list_item .item_link {
     padding: 15px 10px;
+    border-bottom: 1px solid #999;
   }
   .nav_content .nav .nav_list .list_item .item_link:hover {
     background-color: #333;
@@ -804,5 +807,25 @@ form input::placeholder {
   }
   .what_content .what_title {
     text-align: center;
+  }
+
+  .header {
+    background-image: url(../assets/img/HeaderBackgroundM.webp);
+  }
+
+  .why_section {
+    background-image: url(../assets/img/WhyBackgroundM.webp);
+  }
+
+  .first_book_section {
+    background-image: url(../assets/img/BookBackground_01M.webp);
+  }
+
+  .second_book_section {
+    background-image: url(../assets/img/BookBackground_02M.webp);
+  }
+
+  .what_section {
+    background-image: url(../assets/img/WhatBackgroundM.webp);
   }
 }
