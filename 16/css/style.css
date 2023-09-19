@@ -1,0 +1,12 @@
+.container {
+    width: 90%;
+    max-width: 1500px;
+    
+}
+
+.buttons_wrap{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
